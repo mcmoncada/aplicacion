@@ -12,6 +12,7 @@
 
 		<table border=1 cellpadding=7>
 	        <tr>
+	            <th>Numero</th>
 	            <th>Superficie Forestal Quemada</th>
 			    <th>Fecha</th>
 				<th>Muertos</th>
@@ -54,7 +55,7 @@
 								          {
 								            "type": "Feature",
 								            "properties": {
-								              "causa": "{{ obj['CAUSA'].decode('UTF-8') }}",
+								              "causa": "{{ obj['CAUSA'] }}",
 								              "id": "{{ obj['IDPIF'] }}"
 								            },
 								            "geometry": {
